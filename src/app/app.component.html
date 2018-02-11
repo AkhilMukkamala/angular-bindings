@@ -7,8 +7,15 @@
 <p> A Server with ID {{ serverId }} is {{ serverStatus }} </p>
 <p> A Server with ID {{ anotherServerId }} is {{ getServerStatus() }} </p>
 
-<!-- Property Binding -->
+<!-- Property Binding & Event Binding -->
 
-<button class="btn btn-dark" [disabled]="!allowNewServer"> Add Server </button>
+<button class="btn btn-dark" [disabled]="!allowNewServer" (click)="onCreateServer()"> Add Server </button>
+<p> {{ serverCreationStatus }}</p>
+
+
+<label for="server"> Server Name </label>
+
+<input type="text" class="form-control" (input)="onUpdateServerName($event)">
+<p> {{ serverName }}</p>
 
 </div>
