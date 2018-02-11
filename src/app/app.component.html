@@ -18,4 +18,8 @@
 <input type="text" class="form-control" (input)="onUpdateServerName($event)">
 <p> {{ serverName }}</p>
 
+<!-- TwoWay Data Binding -->
+<input type="text" class="form-control" [(ngModel)]="serverName" id="Server">
+<p> {{ serverName }} </p>
+
 </div>

@@ -6,6 +6,7 @@ import { Component } from "@angular/core";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
+
   title = "Angular Bindings";
   serverId: Number = 10;
   serverStatus: String = "Offline";
@@ -30,7 +31,7 @@ export class AppComponent {
   }
 
   onCreateServer() {
-    this.serverCreationStatus = 'Server was Created';
+    this.serverCreationStatus = 'Server was Created with Name' + '  ' + this.serverName;
   }
 
 
