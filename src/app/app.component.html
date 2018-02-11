@@ -3,7 +3,12 @@
     Welcome to {{ title }} Session!
   </h1>
 
+<!-- String Interpolation -->
 <p> A Server with ID {{ serverId }} is {{ serverStatus }} </p>
 <p> A Server with ID {{ anotherServerId }} is {{ getServerStatus() }} </p>
+
+<!-- Property Binding -->
+
+<button class="btn btn-dark" [disabled]="!allowNewServer"> Add Server </button>
 
 </div>
